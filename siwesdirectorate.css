@@ -1,0 +1,189 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .staff {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 300px; /* Added space between staff cards */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .staff-card {
+    text-align: center;
+    max-width: 200px;
+    margin: 40px; /* Add margin here to create space */
+    transition: transform 0.3s;
+}
+
+
+        .staff-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .staff-carousel {
+            display: flex;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-200px * 5));
+            }
+        }
+
+        .duration-selection {
+            text-align: center;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+        /* copied */
+
+        header{
+            display: flex;
+            gap: 750px;
+            background-color: #003366;
+            color: white;
+            height: 20px;
+            padding: 15px;
+        }
+        header>div{
+            margin-left: 40px;
+        }
+        
+        nav{
+            display: flex;
+        }
+        
+        nav>a{
+            text-decoration: none;
+            margin-left: 30px;
+            color: white;
+             transition: text-decoration-color 0.3s ease, color 0.3s ease;
+            
+        }
+        
+        nav>a:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 2px; 
+            text-underline-offset: 3px; 
+            text-decoration-color:  #F0F0F0;
+            color: #ffcc00; 
+            
+        }
+        /* drop down section*/
+        .dropdown-container {
+            position: relative; 
+        }
+        
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1000;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .dropdown a {
+            display: block;
+            padding: 10px 20px;
+            color: #003366; 
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .dropdown a:hover {
+            background-color: #f0f0f0; 
+            color: #003366;
+        }
+        
+        /* Show Dropdown on Hover */
+        .dropdown-container:hover .dropdown {
+            display: block; /* Shows dropdown when hovering */
+        }
+        /* something i taught of adding to make directoreate tasty lol*/
+        .direct-link{
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+        }
+        
+        .direct-link:hover{
+            
+            text-decoration-thickness: 2px; 
+            text-underline-offset: 3px; 
+            text-decoration-color:  #F0F0F0;
+            color: #ffcc00; 
+        }
+
+        
+.logo-image{
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+    right: 40px;
+}
